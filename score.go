@@ -740,7 +740,7 @@ func (ps *peerScore) RejectMessage(msg *Message, reason string) {
 	case RejectUnexpectedAuthInfo:
 		fallthrough
 	case RejectSelfOrigin:
-		ps.markInvalidMessageDelivery(msg.ReceivedFrom, msg)
+		//ps.markInvalidMessageDelivery(msg.ReceivedFrom, msg)
 		return
 
 		// we ignore those messages, so do nothing.
