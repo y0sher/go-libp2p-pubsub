@@ -1682,7 +1682,7 @@ func (gs *GossipSubRouter) clearIHaveCounters() {
 func (gs *GossipSubRouter) applyIwantPenalties() {
 	for p, count := range gs.gossipTracer.GetBrokenPromises() {
 		log.Infof("peer %s didn't follow up in %d IWANT requests; adding penalty", p, count)
-		gs.score.AddPenalty(p, count)
+		//gs.score.AddPenalty(p, count)
 	}
 }
 
